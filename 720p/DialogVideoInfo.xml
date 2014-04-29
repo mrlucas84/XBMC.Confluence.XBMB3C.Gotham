@@ -866,7 +866,7 @@
 					<top>480</top>
 					<width>160</width>
 					<height>160</height>
-					<texture>$INFO[Container(50).Listitem.Icon]</texture>
+					<texture fallback="DefaultArtist.png">$INFO[Container(50).Listitem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<visible>Control.IsVisible(50)</visible>
 				</control>
@@ -932,6 +932,7 @@
 							<info>ListItem.Label</info>
 						</control>
 					</focusedlayout>
+                    <content target="video">$INFO[ListItem.Property(CastPluginLink)]</content>
 				</control>
 				<control type="grouplist" id="9000">
 					<left>210</left>
