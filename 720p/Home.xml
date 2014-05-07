@@ -813,49 +813,49 @@
 						<onclick>true</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>true</visible>
+						<visible>!IsEmpty(Window(Home).Property(LatestMovieMB3.Enabled))</visible>
 					</item>
 					<item id="16011">
 						<label>Recent Episodes</label>
 						<onclick>true</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>true</visible>
+						<visible>!IsEmpty(Window(Home).Property(LatestEpisodeMB3.Enabled))</visible>
 					</item>   
                     <item id="16012">
 						<label>Random Movies</label>
 						<onclick>true</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>true</visible>
+						<visible>!IsEmpty(Window(Home).Property(RandomMovieMB3.Enabled))</visible>
 					</item>  
                     <item id="16013">
 						<label>Random Episodes</label>
 						<onclick>true</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>true</visible>
+						<visible>!IsEmpty(Window(Home).Property(RandomEpisodeMB3.Enabled))</visible>
 					</item>      
 					<item id="16014">
 						<label>Next Episodes</label>
 						<onclick>true</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>true</visible>
+						<visible>!IsEmpty(Window(Home).Property(NextUpEpisodeMB3.Enabled))</visible>
 					</item>           
 					<item id="16015">
 						<label>Active Movies</label>
 						<onclick>true</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>true</visible>
+						<visible>!IsEmpty(Window(Home).Property(InProgressMovieMB3.Enabled))</visible>
 					</item>    
 					<item id="16016">
 						<label>Active Episodes</label>
 						<onclick>true</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>true</visible>
+						<visible>!IsEmpty(Window(Home).Property(InProgresstEpisodeMB3.Enabled))</visible>
 					</item>                      
 				</content>
 			</control>
