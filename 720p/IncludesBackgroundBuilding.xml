@@ -37,6 +37,19 @@
 			<visible>![Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)]</visible>
 		</control>
 		<control type="image">
+            <description>MB3 Selected Item FanArt Background</description>
+			<left>0</left>
+			<top>0</top>
+			<width>1280</width>
+			<height>720</height>
+			<aspectratio>scale</aspectratio>
+			<texture background="true">$INFO[Window(Home).Property(MB3.Background.Item.FanArt)]</texture>
+			<include>backgroundfade</include>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<visible>!IsEmpty(Window(Home).Property(MB3.Background.Item.FanArt))</visible>
+			<include>Window_OpenClose_Animation</include>
+		</control>
+		<control type="image">
 			<left>0</left>
 			<top>0</top>
 			<width>1280</width>
