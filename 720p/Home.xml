@@ -1047,7 +1047,7 @@
 						<aligny>center</aligny>
 						<label>-</label>
 						<visible>false</visible>
-                        <onfocus>SetProperty(MB3.Background.filterOnParent, $INFO[Container(9000).ListItem.Label2], Home)</onfocus>
+                        <onfocus>SetProperty(MB3.Background.Collection, $INFO[Container(9000).ListItem.Label2], Home)</onfocus>
 					</control>                    
 				</focusedlayout>
 				<content>
@@ -1056,7 +1056,7 @@
                     <!-- added dynamic favourites menu item -->
 					<item id="33001">
 						<label>$INFO[Window.Property(xbmb3c_menuitem_name_0)]</label>
-                        <label2>Test01</label2>
+                        <label2>$INFO[Window.Property(xbmb3c_menuitem_collection_0)]</label2>
 						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_0)]&quot;, return)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
@@ -1064,7 +1064,7 @@
 					</item>
 					<item id="33002">
 						<label>$INFO[Window.Property(xbmb3c_menuitem_name_1)]</label>
-                        <label2>Test02</label2>
+                        <label2>$INFO[Window.Property(xbmb3c_menuitem_collection_1)]</label2>
 						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_1)]&quot;, return)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
@@ -1072,7 +1072,7 @@
 					</item>           
 					<item id="33003">
 						<label>$INFO[Window.Property(xbmb3c_menuitem_name_2)]</label>
-                        <label2>Test03</label2>
+                        <label2>$INFO[Window.Property(xbmb3c_menuitem_collection_2)]</label2>
 						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_2)]&quot;, return)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
@@ -1080,7 +1080,7 @@
 					</item>
 					<item id="33004">
 						<label>$INFO[Window.Property(xbmb3c_menuitem_name_3)]</label>
-                        <label2>Test04</label2>
+                        <label2>$INFO[Window.Property(xbmb3c_menuitem_collection_3)]</label2>
 						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_3)]&quot;, return)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
@@ -1088,7 +1088,7 @@
 					</item>
                     <item id="33005">
 						<label>$INFO[Window.Property(xbmb3c_menuitem_name_4)]</label>
-                        <label2>Test05</label2>
+                        <label2>$INFO[Window.Property(xbmb3c_menuitem_collection_4)]</label2>
 						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_4)]&quot;, return)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
