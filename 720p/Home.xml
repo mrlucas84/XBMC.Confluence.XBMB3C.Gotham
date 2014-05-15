@@ -1055,44 +1055,44 @@
 
                     <!-- added dynamic favourites menu item -->
 					<item id="33001">
-						<label>$INFO[Window.Property(xbmb3c_menuitem_name_0)]</label>
-                        <label2>$INFO[Window.Property(xbmb3c_menuitem_collection_0)]</label2>
-						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_0)]&quot;, return)</onclick>
+						<label>$INFO[Window.Property(xbmb3c_collection_menuitem_name_0)]</label>
+                        <label2>$INFO[Window.Property(xbmb3c_collection_menuitem_collection_0)]</label2>
+						<onclick>$INFO[Window.Property(xbmb3c_collection_menuitem_action_0)]</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_0))</visible>
+						<visible>!IsEmpty(Window.Property(xbmb3c_collection_menuitem_name_0))</visible>
 					</item>
 					<item id="33002">
-						<label>$INFO[Window.Property(xbmb3c_menuitem_name_1)]</label>
-                        <label2>$INFO[Window.Property(xbmb3c_menuitem_collection_1)]</label2>
-						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_1)]&quot;, return)</onclick>
+						<label>$INFO[Window.Property(xbmb3c_collection_menuitem_name_1)]</label>
+                        <label2>$INFO[Window.Property(xbmb3c_collection_menuitem_collection_1)]</label2>
+						<onclick>$INFO[Window.Property(xbmb3c_collection_menuitem_action_1)]</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_1))</visible>
+						<visible>!IsEmpty(Window.Property(xbmb3c_collection_menuitem_name_1))</visible>
 					</item>           
 					<item id="33003">
-						<label>$INFO[Window.Property(xbmb3c_menuitem_name_2)]</label>
-                        <label2>$INFO[Window.Property(xbmb3c_menuitem_collection_2)]</label2>
-						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_2)]&quot;, return)</onclick>
+						<label>$INFO[Window.Property(xbmb3c_collection_menuitem_name_2)]</label>
+                        <label2>$INFO[Window.Property(xbmb3c_collection_menuitem_collection_2)]</label2>
+						<onclick>$INFO[Window.Property(xbmb3c_collection_menuitem_action_2)]</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_2))</visible>
+						<visible>!IsEmpty(Window.Property(xbmb3c_collection_menuitem_name_2))</visible>
 					</item>
 					<item id="33004">
-						<label>$INFO[Window.Property(xbmb3c_menuitem_name_3)]</label>
-                        <label2>$INFO[Window.Property(xbmb3c_menuitem_collection_3)]</label2>
-						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_3)]&quot;, return)</onclick>
+						<label>$INFO[Window.Property(xbmb3c_collection_menuitem_name_3)]</label>
+                        <label2>$INFO[Window.Property(xbmb3c_collection_menuitem_collection_3)]</label2>
+						<onclick>$INFO[Window.Property(xbmb3c_collection_menuitem_action_3)]</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_3))</visible>
+						<visible>!IsEmpty(Window.Property(xbmb3c_collection_menuitem_name_3))</visible>
 					</item>
                     <item id="33005">
-						<label>$INFO[Window.Property(xbmb3c_menuitem_name_4)]</label>
-                        <label2>$INFO[Window.Property(xbmb3c_menuitem_collection_4)]</label2>
-						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_4)]&quot;, return)</onclick>
+						<label>$INFO[Window.Property(xbmb3c_collection_menuitem_name_4)]</label>
+                        <label2>$INFO[Window.Property(xbmb3c_collection_menuitem_collection_4)]</label2>
+						<onclick>$INFO[Window.Property(xbmb3c_collection_menuitem_action_4)]</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_4))</visible>
+						<visible>!IsEmpty(Window.Property(xbmb3c_collection_menuitem_name_4))</visible>
 					</item>        
 
 
