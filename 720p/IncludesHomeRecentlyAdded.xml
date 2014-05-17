@@ -1,4 +1,263 @@
-<includes>z
+<includes>
+
+    <include name="WidgetLabelActive">
+        <control type="label">
+            <description>Title label</description>
+            <left>0</left>
+            <top>20</top>
+            <height>20</height>
+            <width>540</width>
+            <label>Active</label>
+            <font>font30_title</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <angle>-90</angle>
+        </control>    
+    </include>
+    
+    <include name="WidgetLabelRecent">    
+        <control type="label">
+            <description>Title label</description>
+            <left>0</left>
+            <top>20</top>
+            <height>20</height>
+            <width>480</width>
+            <label>Recent</label>
+            <font>font30_title</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <angle>-90</angle>
+        </control>    
+    </include>
+    
+    <include name="WidgetListPropsUpper">
+        <left>0</left>
+        <top>0</top>
+        <width>900</width>
+        <height>220</height>
+        <onleft>-</onleft>
+        <onright>-</onright>
+        <onup>20</onup>
+        <ondown>8006</ondown>
+        <viewtype label="535">list</viewtype>
+        <pagecontrol>-</pagecontrol>
+        <scrolltime>200</scrolltime>
+        <orientation>Horizontal</orientation>
+    </include>   
+    
+    <include name="WidgetListPropsLower">
+        <left>0</left>
+        <top>0</top>
+        <width>900</width>
+        <height>220</height>
+        <onleft>-</onleft>
+        <onright>-</onright>
+        <onup>8005</onup>
+        <ondown>9000</ondown>
+        <viewtype label="535">list</viewtype>
+        <pagecontrol>-</pagecontrol>
+        <scrolltime>200</scrolltime>
+        <orientation>Horizontal</orientation>
+    </include>       
+
+    <include name="WidgetLayoutUpper">
+        <itemlayout height="220" width="180">
+            <control type="image">
+                <left>10</left>
+                <top>10</top>
+                <width>160</width>
+                <height>170</height>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <bordertexture border="5">button-nofocus.png</bordertexture>
+                <bordersize>5</bordersize>
+                <colordiffuse>menu_alpha</colordiffuse>
+            </control>
+            <control type="image">
+                <left>40</left>
+                <top>160</top>
+                <width>100</width>
+                <height>5</height>
+                <texture background="true">progress_$INFO[ListItem.Property(complete_percentage)].png</texture>
+                <colordiffuse>menu_alpha</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+                <visible>!IsEmpty(ListItem.Property(complete_percentage))</visible>
+            </control>                        
+            <control type="label">
+                <left>90</left>
+                <top>180</top>
+                <width>160</width>
+                <height>20</height>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+        </itemlayout>
+        <focusedlayout height="220" width="180">
+            <control type="image">
+                <left>10</left>
+                <top>10</top>
+                <width>160</width>
+                <height>170</height>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <bordertexture border="5">folder-focus.png</bordertexture>
+                <bordersize>5</bordersize>
+                <visible>Control.HasFocus(8005)</visible>
+            </control>                       
+            <control type="image">
+                <left>10</left>
+                <top>10</top>
+                <width>160</width>
+                <height>170</height>
+                <texture>$INFO[ListItem.Icon]</texture>
+                <bordertexture border="5">button-nofocus.png</bordertexture>
+                <bordersize>5</bordersize>
+                <colordiffuse>menu_alpha</colordiffuse>
+                <visible>!Control.HasFocus(8005)</visible>
+            </control>
+            <control type="image">
+                <left>40</left>
+                <top>160</top>
+                <width>100</width>
+                <height>5</height>
+                <texture background="true">progress_$INFO[ListItem.Property(complete_percentage)].png</texture>
+                <colordiffuse>menu_alpha</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+                <visible>!IsEmpty(ListItem.Property(complete_percentage))</visible>
+            </control>                           
+            <control type="label">
+                <left>90</left>
+                <top>180</top>
+                <width>160</width>
+                <height>20</height>
+                <font>font12</font>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>$INFO[ListItem.Label]</label>
+                <visible>Control.HasFocus(8005)</visible>
+            </control>
+            <control type="label">
+                <left>90</left>
+                <top>180</top>
+                <width>160</width>
+                <height>20</height>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>$INFO[ListItem.Label]</label>
+                <visible>!Control.HasFocus(8005)</visible>
+            </control>
+        </focusedlayout>
+    </include>                    
+    
+    <include name="WidgetLayoutLower">
+        <itemlayout height="220" width="180">
+            <control type="image">
+                <left>10</left>
+                <top>10</top>
+                <width>160</width>
+                <height>170</height>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <bordertexture border="5">button-nofocus.png</bordertexture>
+                <colordiffuse>menu_alpha</colordiffuse>
+                <bordersize>5</bordersize>
+            </control>                 
+            <control type="image">
+                <left>40</left>
+                <top>160</top>
+                <width>100</width>
+                <height>5</height>
+                <texture background="true">progress_$INFO[ListItem.Property(complete_percentage)].png</texture>
+                <colordiffuse>menu_alpha</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+                <visible>!IsEmpty(ListItem.Property(complete_percentage))</visible>
+            </control>    
+            <control type="label">
+                <left>90</left>
+                <top>180</top>
+                <width>160</width>
+                <height>20</height>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+        </itemlayout>
+        <focusedlayout height="220" width="180">
+            <control type="image">
+                <left>10</left>
+                <top>10</top>
+                <width>160</width>
+                <height>170</height>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <bordertexture border="5">folder-focus.png</bordertexture>
+                <bordersize>5</bordersize>
+                <visible>Control.HasFocus(8006)</visible>
+            </control>
+            <control type="image">
+                <left>10</left>
+                <top>10</top>
+                <width>160</width>
+                <height>170</height>
+                <texture>$INFO[ListItem.Icon]</texture>
+                <bordertexture border="5">button-nofocus.png</bordertexture>
+                <bordersize>5</bordersize>
+                <visible>!Control.HasFocus(8006)</visible>
+                <colordiffuse>menu_alpha</colordiffuse>
+            </control>
+            <control type="image">
+                <left>40</left>
+                <top>160</top>
+                <width>100</width>
+                <height>5</height>
+                <texture background="true">progress_$INFO[ListItem.Property(complete_percentage)].png</texture>
+                <colordiffuse>menu_alpha</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+                <visible>!IsEmpty(ListItem.Property(complete_percentage))</visible>
+            </control>              
+            <control type="label">
+                <left>90</left>
+                <top>180</top>
+                <width>160</width>
+                <height>20</height>
+                <font>font12</font>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>$INFO[ListItem.Label]</label>
+                <visible>Control.HasFocus(8006)</visible>
+            </control>
+            <control type="label">
+                <left>90</left>
+                <top>180</top>
+                <width>160</width>
+                <height>20</height>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>$INFO[ListItem.Label]</label>
+                <visible>!Control.HasFocus(8006)</visible>
+            </control>
+        </focusedlayout>
+    </include>                    
+    
 	<include name="HomeRecentlyAddedInfo">
 		<control type="group" id="9003">
 			<onup>20</onup>
@@ -7,131 +266,18 @@
 			<include>VisibleFadeEffect</include>
 			<animation effect="fade" time="300" delay="1000">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
+            
+            
 			<control type="group">
 				<left>190</left>
 				<top>70</top>
 				<visible>Container(9000).Hasfocus(33001)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
-					<description>Title label</description>
-					<left>0</left>
-					<top>20</top>
-					<height>20</height>
-					<width>540</width>
-					<label>Active</label>
-					<font>font30_title</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-                    <angle>-90</angle>
-				</control>
+				<include>WidgetLabelActive</include>
 				<control type="list" id="8005">
-					<left>0</left>
-					<top>0</top>
-					<width>900</width>
-					<height>220</height>
-					<onleft>-</onleft>
-					<onright>-</onright>
-					<onup>20</onup>
-					<ondown>8006</ondown>
-					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
-					<scrolltime>200</scrolltime>
-					<orientation>Horizontal</orientation>
-					<itemlayout height="220" width="180">
-						<control type="image">
-							<left>10</left>
-							<top>10</top>
-							<width>160</width>
-							<height>170</height>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
-							<bordertexture border="5">button-nofocus.png</bordertexture>
-							<bordersize>5</bordersize>
-                            <colordiffuse>menu_alpha</colordiffuse>
-						</control>
-						<control type="image">
-							<left>40</left>
-							<top>160</top>
-							<width>100</width>
-							<height>5</height>
-							<texture background="true">progress_$INFO[ListItem.Property(complete_percentage)].png</texture>
-                            <colordiffuse>menu_alpha</colordiffuse>
-                            <aspectratio>stretch</aspectratio>
-						</control>                        
-						<control type="label">
-							<left>90</left>
-							<top>180</top>
-							<width>160</width>
-							<height>20</height>
-							<font>font12</font>
-							<textcolor>white</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-					</itemlayout>
-					<focusedlayout height="220" width="180">
-						<control type="image">
-							<left>10</left>
-							<top>10</top>
-							<width>160</width>
-							<height>170</height>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
-							<bordertexture border="5">folder-focus.png</bordertexture>
-							<bordersize>5</bordersize>
-							<visible>Control.HasFocus(8005)</visible>
-						</control>                       
-						<control type="image">
-							<left>10</left>
-							<top>10</top>
-							<width>160</width>
-							<height>170</height>
-							<texture>$INFO[ListItem.Icon]</texture>
-							<bordertexture border="5">button-nofocus.png</bordertexture>
-							<bordersize>5</bordersize>
-                            <colordiffuse>menu_alpha</colordiffuse>
-							<visible>!Control.HasFocus(8005)</visible>
-						</control>
-						<control type="image">
-							<left>40</left>
-							<top>160</top>
-							<width>100</width>
-							<height>5</height>
-							<texture background="true">progress_$INFO[ListItem.Property(complete_percentage)].png</texture>
-                            <colordiffuse>menu_alpha</colordiffuse>
-                            <aspectratio>stretch</aspectratio>
-						</control>                           
-						<control type="label">
-							<left>90</left>
-							<top>180</top>
-							<width>160</width>
-							<height>20</height>
-							<font>font12</font>
-							<textcolor>blue</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]</label>
-                            <visible>Control.HasFocus(8005)</visible>
-						</control>
-						<control type="label">
-							<left>90</left>
-							<top>180</top>
-							<width>160</width>
-							<height>20</height>
-							<font>font12</font>
-							<textcolor>white</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]</label>
-                            <visible>!Control.HasFocus(8005)</visible>
-						</control>
-					</focusedlayout>
-                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_3)]&type=active</content>
+					<include>WidgetListPropsUpper</include>
+                    <include>WidgetLayoutUpper</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_0)]&type=active</content>
 				</control>
 			</control>
 			<control type="group">
@@ -139,110 +285,116 @@
 				<top>270</top>
 				<visible>Container(9000).Hasfocus(33001)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
-					<description>Title label</description>
-					<left>0</left>
-					<top>20</top>
-					<height>20</height>
-					<width>480</width>
-					<label>Recent</label>
-					<font>font30_title</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-                    <angle>-90</angle>
-				</control>
+				<include>WidgetLabelRecent</include>
 				<control type="list" id="8006">
-					<left>0</left>
-					<top>0</top>
-					<width>900</width>
-					<height>220</height>
-					<onleft>-</onleft>
-					<onright>-</onright>
-					<onup>8005</onup>
-					<ondown>9000</ondown>
-					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
-					<scrolltime>200</scrolltime>
-					<orientation>Horizontal</orientation>
-					<itemlayout height="220" width="180">
-						<control type="image">
-							<left>10</left>
-							<top>10</top>
-							<width>160</width>
-							<height>170</height>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
-							<bordertexture border="5">button-nofocus.png</bordertexture>
-                            <colordiffuse>menu_alpha</colordiffuse>
-							<bordersize>5</bordersize>
-						</control>                        
-						<control type="label">
-							<left>90</left>
-							<top>180</top>
-							<width>160</width>
-							<height>20</height>
-							<font>font12</font>
-							<textcolor>white</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-					</itemlayout>
-					<focusedlayout height="220" width="180">
-						<control type="image">
-							<left>10</left>
-							<top>10</top>
-							<width>160</width>
-							<height>170</height>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
-							<bordertexture border="5">folder-focus.png</bordertexture>
-							<bordersize>5</bordersize>
-							<visible>Control.HasFocus(8006)</visible>
-						</control>
-						<control type="image">
-							<left>10</left>
-							<top>10</top>
-							<width>160</width>
-							<height>170</height>
-							<texture>$INFO[ListItem.Icon]</texture>
-							<bordertexture border="5">button-nofocus.png</bordertexture>
-							<bordersize>5</bordersize>
-							<visible>!Control.HasFocus(8006)</visible>
-                            <colordiffuse>menu_alpha</colordiffuse>
-						</control>
-						<control type="label">
-							<left>90</left>
-							<top>180</top>
-							<width>160</width>
-							<height>20</height>
-							<font>font12</font>
-							<textcolor>blue</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]</label>
-                            <visible>Control.HasFocus(8006)</visible>
-						</control>
-						<control type="label">
-							<left>90</left>
-							<top>180</top>
-							<width>160</width>
-							<height>20</height>
-							<font>font12</font>
-							<textcolor>white</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<selectedcolor>selected</selectedcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label]</label>
-                            <visible>!Control.HasFocus(8006)</visible>
-						</control>
-					</focusedlayout>
-                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_3)]&type=recent</content>
+					<include>WidgetListPropsLower</include>
+                    <include>WidgetLayoutLower</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_0)]&type=recent</content>
 				</control>
 			</control>
+            
+			<control type="group">
+				<left>190</left>
+				<top>70</top>
+				<visible>Container(9000).Hasfocus(33002)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelActive</include>
+				<control type="list" id="8005">
+					<include>WidgetListPropsUpper</include>
+                    <include>WidgetLayoutUpper</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_1)]&type=active</content>
+				</control>
+			</control>
+			<control type="group">
+				<left>190</left>
+				<top>270</top>
+				<visible>Container(9000).Hasfocus(33002)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelRecent</include>
+				<control type="list" id="8006">
+					<include>WidgetListPropsLower</include>
+                    <include>WidgetLayoutLower</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_1)]&type=recent</content>
+				</control>
+			</control>         
+
+            <control type="group">
+				<left>190</left>
+				<top>70</top>
+				<visible>Container(9000).Hasfocus(33003)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelActive</include>
+				<control type="list" id="8005">
+					<include>WidgetListPropsUpper</include>
+                    <include>WidgetLayoutUpper</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_2)]&type=active</content>
+				</control>
+			</control>
+			<control type="group">
+				<left>190</left>
+				<top>270</top>
+				<visible>Container(9000).Hasfocus(33003)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelRecent</include>
+				<control type="list" id="8006">
+					<include>WidgetListPropsLower</include>
+                    <include>WidgetLayoutLower</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_2)]&type=recent</content>
+				</control>
+			</control>   
+            
+            <control type="group">
+				<left>190</left>
+				<top>70</top>
+				<visible>Container(9000).Hasfocus(33004)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelActive</include>
+				<control type="list" id="8005">
+					<include>WidgetListPropsUpper</include>
+                    <include>WidgetLayoutUpper</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_3)]&type=active</content>
+				</control>
+			</control>
+			<control type="group">
+				<left>190</left>
+				<top>270</top>
+				<visible>Container(9000).Hasfocus(33004)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelRecent</include>
+				<control type="list" id="8006">
+					<include>WidgetListPropsLower</include>
+                    <include>WidgetLayoutLower</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_3)]&type=recent</content>
+				</control>
+			</control>    
+
+            <control type="group">
+				<left>190</left>
+				<top>70</top>
+				<visible>Container(9000).Hasfocus(33005)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelActive</include>
+				<control type="list" id="8005">
+					<include>WidgetListPropsUpper</include>
+                    <include>WidgetLayoutUpper</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_4)]&type=active</content>
+				</control>
+			</control>
+			<control type="group">
+				<left>190</left>
+				<top>270</top>
+				<visible>Container(9000).Hasfocus(33005)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelRecent</include>
+				<control type="list" id="8006">
+					<include>WidgetListPropsLower</include>
+                    <include>WidgetLayoutLower</include>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_4)]&type=recent</content>
+				</control>
+			</control>  
+            
+            
+            
         </control>
 	</include>
 </includes>
