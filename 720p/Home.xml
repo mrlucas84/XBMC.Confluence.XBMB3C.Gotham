@@ -429,6 +429,42 @@
 		</control>
         -->
         
+       
+        <control type="button" id="610">
+            <ondown>9000</ondown>
+            <onright>9003</onright>
+            <left>55</left>
+            <top>90</top>
+            <width>240</width>
+            <height>350</height>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <onclick>$INFO[Window.Property(MB3.Background.Global.FanArt.Action)]</onclick>
+        </control>
+        <control type="image">
+            <left>55</left>
+            <top>90</top>
+            <width>240</width>
+            <height>350</height>
+            <texture>$INFO[Window.Property(MB3.Background.Global.FanArt.Poster)]</texture>
+            <bordertexture border="5">folder-focus.png</bordertexture>
+            <bordersize>5</bordersize>
+            <visible>Control.HasFocus(610)</visible>
+            <fadetime>FanartCrossfadeTime</fadetime>
+        </control>
+        <control type="image">
+            <left>55</left>
+            <top>90</top>
+            <width>240</width>
+            <height>350</height>
+            <texture>$INFO[Window.Property(MB3.Background.Global.FanArt.Poster)]</texture>
+            <bordertexture border="5">button-nofocus.png</bordertexture>
+            <bordersize>5</bordersize>        
+            <visible>!Control.HasFocus(610)</visible>           
+            <fadetime>FanartCrossfadeTime</fadetime>
+        </control>            
+
+       
 		<include condition="!Skin.HasSetting(HomepageHideRecentlyAddedVideo) | !Skin.HasSetting(HomepageHideRecentlyAddedAlbums)">HomeRecentlyAddedInfo</include>
 		<control type="button" id="9003">
 			<description>Hidden Button to pass through navigation when recently added is disabled</description>

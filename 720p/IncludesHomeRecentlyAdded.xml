@@ -3,7 +3,7 @@
     <include name="WidgetLabelActive">
         <control type="label">
             <description>Title label</description>
-            <left>0</left>
+            <left>30</left>
             <top>20</top>
             <height>20</height>
             <width>540</width>
@@ -18,7 +18,7 @@
     <include name="WidgetLabelRecent">    
         <control type="label">
             <description>Title label</description>
-            <left>0</left>
+            <left>30</left>
             <top>20</top>
             <height>20</height>
             <width>480</width>
@@ -35,7 +35,7 @@
         <top>0</top>
         <width>900</width>
         <height>220</height>
-        <onleft>-</onleft>
+        <onleft>610</onleft>
         <onright>-</onright>
         <onup>20</onup>
         <ondown>8006</ondown>
@@ -50,7 +50,7 @@
         <top>0</top>
         <width>900</width>
         <height>220</height>
-        <onleft>-</onleft>
+        <onleft>610</onleft>
         <onright>-</onright>
         <onup>8005</onup>
         <ondown>9000</ondown>
@@ -87,7 +87,7 @@
                 <top>180</top>
                 <width>160</width>
                 <height>20</height>
-                <font>font12</font>
+                <font>font10</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <selectedcolor>selected</selectedcolor>
@@ -133,7 +133,7 @@
                 <top>180</top>
                 <width>160</width>
                 <height>20</height>
-                <font>font12</font>
+                <font>font10</font>
                 <textcolor>blue</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <selectedcolor>selected</selectedcolor>
@@ -147,7 +147,7 @@
                 <top>180</top>
                 <width>160</width>
                 <height>20</height>
-                <font>font12</font>
+                <font>font10</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <selectedcolor>selected</selectedcolor>
@@ -186,7 +186,7 @@
                 <top>180</top>
                 <width>160</width>
                 <height>20</height>
-                <font>font12</font>
+                <font>font10</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <selectedcolor>selected</selectedcolor>
@@ -232,7 +232,7 @@
                 <top>180</top>
                 <width>160</width>
                 <height>20</height>
-                <font>font12</font>
+                <font>font10</font>
                 <textcolor>blue</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <selectedcolor>selected</selectedcolor>
@@ -246,7 +246,7 @@
                 <top>180</top>
                 <width>160</width>
                 <height>20</height>
-                <font>font12</font>
+                <font>font10</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <selectedcolor>selected</selectedcolor>
@@ -269,7 +269,7 @@
             
             
 			<control type="group">
-				<left>190</left>
+				<left>330</left>
 				<top>70</top>
 				<visible>Container(9000).Hasfocus(33001)</visible>
 				<include>VisibleFadeEffect</include>
@@ -281,7 +281,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>190</left>
+				<left>330</left>
 				<top>270</top>
 				<visible>Container(9000).Hasfocus(33001)</visible>
 				<include>VisibleFadeEffect</include>
@@ -294,7 +294,7 @@
 			</control>
             
 			<control type="group">
-				<left>190</left>
+				<left>330</left>
 				<top>70</top>
 				<visible>Container(9000).Hasfocus(33002)</visible>
 				<include>VisibleFadeEffect</include>
@@ -306,7 +306,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>190</left>
+				<left>330</left>
 				<top>270</top>
 				<visible>Container(9000).Hasfocus(33002)</visible>
 				<include>VisibleFadeEffect</include>
@@ -319,7 +319,7 @@
 			</control>         
 
             <control type="group">
-				<left>190</left>
+				<left>330</left>
 				<top>70</top>
 				<visible>Container(9000).Hasfocus(33003)</visible>
 				<include>VisibleFadeEffect</include>
@@ -331,7 +331,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>190</left>
+				<left>330</left>
 				<top>270</top>
 				<visible>Container(9000).Hasfocus(33003)</visible>
 				<include>VisibleFadeEffect</include>
@@ -344,7 +344,7 @@
 			</control>   
             
             <control type="group">
-				<left>190</left>
+				<left>330</left>
 				<top>70</top>
 				<visible>Container(9000).Hasfocus(33004)</visible>
 				<include>VisibleFadeEffect</include>
@@ -356,7 +356,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>190</left>
+				<left>330</left>
 				<top>270</top>
 				<visible>Container(9000).Hasfocus(33004)</visible>
 				<include>VisibleFadeEffect</include>
@@ -369,7 +369,7 @@
 			</control>    
 
             <control type="group">
-				<left>190</left>
+				<left>330</left>
 				<top>70</top>
 				<visible>Container(9000).Hasfocus(33005)</visible>
 				<include>VisibleFadeEffect</include>
@@ -381,7 +381,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>190</left>
+				<left>330</left>
 				<top>270</top>
 				<visible>Container(9000).Hasfocus(33005)</visible>
 				<include>VisibleFadeEffect</include>
