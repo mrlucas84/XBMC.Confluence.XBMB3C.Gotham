@@ -431,7 +431,8 @@
         
        
         <control type="button" id="610">
-            <ondown>9000</ondown>
+            <ondown>600</ondown>
+            <onup>20</onup>
             <onright>9003</onright>
             <left>55</left>
             <top>90</top>
@@ -479,7 +480,7 @@
 			<onleft>9000</onleft>
 			<onright>9000</onright>
 			<onup>20</onup>
-			<ondown>608</ondown>
+			<ondown>600</ondown>
 			<visible>false</visible>
 		</control>
 
@@ -540,8 +541,8 @@
             -->
 			<control type="group" id="600">
 				<left>180</left>
-				<onup>9003</onup>
-				<ondown>16001</ondown>
+				<onup>610</onup>
+				<ondown>9000</ondown>
 				<defaultcontrol>-</defaultcontrol>
 				<enable>Player.HasMedia</enable>
 				<control type="image">
@@ -565,7 +566,7 @@
 						<texturenofocus>OSDPrevTrackNF.png</texturenofocus>
 						<onleft>608</onleft>
 						<onright>602</onright>
-						<onup>9003</onup>
+						<onup>610</onup>
 						<ondown>9000</ondown>
 						<onclick>XBMC.PlayerControl(Previous)</onclick>
 					</control>
@@ -579,7 +580,7 @@
 						<texturenofocus>OSDRewindNF.png</texturenofocus>
 						<onleft>601</onleft>
 						<onright>603</onright>
-						<onup>9003</onup>
+						<onup>610</onup>
 						<ondown>9000</ondown>
 						<onclick>XBMC.PlayerControl(Rewind)</onclick>
 					</control>
@@ -596,7 +597,7 @@
 						<alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
 						<onleft>602</onleft>
 						<onright>604</onright>
-						<onup>9003</onup>
+						<onup>610</onup>
 						<ondown>9000</ondown>
 						<onclick>XBMC.PlayerControl(Play)</onclick>
 					</control>
@@ -610,7 +611,7 @@
 						<texturenofocus>OSDStopNF.png</texturenofocus>
 						<onleft>603</onleft>
 						<onright>605</onright>
-						<onup>9003</onup>
+						<onup>610</onup>
 						<ondown>9000</ondown>
 						<onclick>down</onclick>
 						<onclick>XBMC.PlayerControl(Stop)</onclick>
@@ -625,7 +626,7 @@
 						<texturenofocus>OSDForwardNF.png</texturenofocus>
 						<onleft>604</onleft>
 						<onright>606</onright>
-						<onup>9003</onup>
+						<onup>610</onup>
 						<ondown>9000</ondown>
 						<onclick>XBMC.PlayerControl(Forward)</onclick>
 					</control>
@@ -639,7 +640,7 @@
 						<texturenofocus>OSDNextTrackNF.png</texturenofocus>
 						<onleft>605</onleft>
 						<onright>607</onright>
-						<onup>9003</onup>
+						<onup>610</onup>
 						<ondown>9000</ondown>
 						<onclick>XBMC.PlayerControl(Next)</onclick>
 					</control>
@@ -656,7 +657,7 @@
 						<texturenofocus>OSDChannelUPNF.png</texturenofocus>
 						<onleft>608</onleft>
 						<onright>602</onright>
-						<onup>9003</onup>
+						<onup>610</onup>
 						<ondown>9000</ondown>
 						<onclick>ChannelDown</onclick>
 					</control>
@@ -670,7 +671,7 @@
 						<texturenofocus>OSDChannelDownNF.png</texturenofocus>
 						<onleft>601</onleft>
 						<onright>603</onright>
-						<onup>9003</onup>
+						<onup>610</onup>
 						<ondown>9000</ondown>
 						<onclick>ChannelUp</onclick>
 					</control>
@@ -684,7 +685,7 @@
 						<texturenofocus>OSDStopNF.png</texturenofocus>
 						<onleft>602</onleft>
 						<onright>604</onright>
-						<onup>9003</onup>
+						<onup>610</onup>
 						<ondown>9000</ondown>
 						<onclick>down</onclick>
 						<onclick>XBMC.PlayerControl(Stop)</onclick>
@@ -702,7 +703,7 @@
 						<alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
 						<onleft>603</onleft>
 						<onright>606</onright>
-						<onup>9003</onup>
+						<onup>610</onup>
 						<ondown>9000</ondown>
 						<onclick>XBMC.PlayerControl(Play)</onclick>
 						<enable>Player.PauseEnabled</enable>
@@ -718,7 +719,7 @@
 						<texturenofocus>OSDRecordOffNF.png</texturenofocus>
 						<onleft>604</onleft>
 						<onright>607</onright>
-						<onup>9003</onup>
+						<onup>610</onup>
 						<ondown>9000</ondown>
 						<onclick>XBMC.PlayerControl(record)</onclick>
 					</control>
@@ -749,7 +750,7 @@
 				<textureradiooffnofocus>GoFullscreen.png</textureradiooffnofocus>
 				<onleft>606</onleft>
 				<onright>608</onright>
-				<onup>9003</onup>
+				<onup>610</onup>
 				<ondown>9000</ondown>
 				<enable>Player.HasMedia</enable>
 			</control>
@@ -1187,7 +1188,7 @@
 				<onleft>21</onleft>
 				<onright>21</onright>
 				<onup>9001</onup>
-				<ondown>9003</ondown>
+				<ondown>610</ondown>
 			</control>
 			<control type="image">
 				<description>Power Icon</description>
@@ -1212,7 +1213,7 @@
 				<onleft>20</onleft>
 				<onright>20</onright>
 				<onup>9001</onup>
-				<ondown>9003</ondown>
+				<ondown>610</ondown>
 			</control>
 			<control type="image">
 				<description>Favourites Icon</description>

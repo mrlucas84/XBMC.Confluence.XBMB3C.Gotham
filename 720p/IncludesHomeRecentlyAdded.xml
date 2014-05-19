@@ -53,7 +53,7 @@
         <onleft>610</onleft>
         <onright>-</onright>
         <onup>8005</onup>
-        <ondown>9000</ondown>
+        <ondown>600</ondown>
         <viewtype label="535">list</viewtype>
         <pagecontrol>-</pagecontrol>
         <scrolltime>200</scrolltime>
