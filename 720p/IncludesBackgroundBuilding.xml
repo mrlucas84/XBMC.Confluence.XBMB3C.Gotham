@@ -93,6 +93,7 @@
 			<visible>true</visible>
 			<include>backgroundfade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
+            <colordiffuse>FF666666</colordiffuse>
 		</control>        
 	</include>
 	<include name="ContentPanelBackgrounds">
