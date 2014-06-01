@@ -947,8 +947,8 @@
 				<content>
                 
 					<item id="5">
-						<label>System</label>
-						<onclick>ActivateWindow(Settings)</onclick>
+						<label>Xbmb3c</label>
+                        <onclick>RunAddon(plugin.video.xbmb3c)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
 					</item>                

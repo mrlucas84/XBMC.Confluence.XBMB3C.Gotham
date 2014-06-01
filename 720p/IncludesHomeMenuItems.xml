@@ -202,17 +202,17 @@
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
-		<control type="button" id="90122">
-			<include>ButtonHomeSubCommonValues</include>
-            <colordiffuse>menu_alpha</colordiffuse>
-			<label>5</label>
-			<onclick>ActivateWindow(Settings)</onclick>
-		</control>
 		<control type="button" id="90123">
 			<include>ButtonHomeSubCommonValues</include>
             <colordiffuse>menu_alpha</colordiffuse>
-			<label>7</label>
-			<onclick>ActivateWindow(FileManager)</onclick>
+			<label>Xbmb3c Config</label>
+            <onclick>Addon.OpenSettings(plugin.video.xbmb3c)</onclick>
+		</control>        
+		<control type="button" id="90122">
+			<include>ButtonHomeSubCommonValues</include>
+            <colordiffuse>menu_alpha</colordiffuse>
+			<label>System</label>
+			<onclick>ActivateWindow(Settings)</onclick>
 		</control>
 		<control type="button" id="90124">
 			<include>ButtonHomeSubCommonValues</include>
