@@ -384,6 +384,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
+                    <!--
 					<control type="radiobutton" id="202">
 						<description>enable video info</description>
 						<width>750</width>
@@ -397,6 +398,8 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+                    -->
+                    <!--
 					<control type="radiobutton" id="203">
 						<description>enable music info</description>
 						<width>750</width>
@@ -410,6 +413,8 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+                    -->
+                    <!--
 					<control type="radiobutton" id="204">
 						<description>enable weather info</description>
 						<width>750</width>
@@ -424,6 +429,8 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>!IsEmpty(Weather.Plugin)</visible>
 					</control>
+                    -->
+                    <!--
 					<control type="radiobutton" id="205">
 						<description>Show Recently added Video info</description>
 						<width>750</width>
@@ -450,6 +457,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+                    -->
 					<control type="label" id="220">
 						<width>750</width>
 						<height>45</height>
@@ -473,6 +481,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+                    <!--
 					<control type="radiobutton" id="222">
 						<description>Hide Movies Button</description>
 						<width>750</width>
@@ -553,6 +562,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+                    -->
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1060</left>
@@ -570,6 +580,7 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(2)</visible>
 				</control>
+                
                 <!--
 				<control type="grouplist" id="9003">
 					<visible>Container(9000).Hasfocus(3)</visible>

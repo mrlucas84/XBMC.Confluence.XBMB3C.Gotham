@@ -946,6 +946,12 @@
 				</focusedlayout>
 				<content>
                 
+					<item id="5">
+						<label>System</label>
+						<onclick>ActivateWindow(Settings)</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+					</item>                
 
                     <!-- added dynamic favourites menu item -->
 					<item id="33001">
@@ -990,7 +996,7 @@
 					</item>        
 
 
-
+                    <!--
 					<item id="7">
 						<label>31950</label>
 						<onclick>ActivateWindow(Weather)</onclick>
@@ -1056,12 +1062,8 @@
 						<thumb>-</thumb>
 						<visible>System.HasMediaDVD</visible>
 					</item>
-					<item id="5">
-						<label>31959</label>
-						<onclick>ActivateWindow(Settings)</onclick>
-						<icon>-</icon>
-						<thumb>-</thumb>
-					</item>
+                    -->
+
 				</content>
 			</control>
 			<control type="image">
