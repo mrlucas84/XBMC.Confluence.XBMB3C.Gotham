@@ -948,7 +948,8 @@
                 
 					<item id="5">
 						<label>Xbmb3c</label>
-                        <onclick>RunAddon(plugin.video.xbmb3c)</onclick>
+                        <onclick>ActivateWindow(Video,plugin://plugin.video.xbmb3c)</onclick>
+                        <!--<onclick>RunAddon(plugin.video.xbmb3c)</onclick>-->
 						<icon>-</icon>
 						<thumb>-</thumb>
 					</item>                
@@ -993,8 +994,47 @@
 						<icon>-</icon>
 						<thumb>-</thumb>
 						<visible>!IsEmpty(Window.Property(xbmb3c_collection_menuitem_name_4))</visible>
-					</item>        
+					</item>     
 
+
+                    <!-- add menu items for favourites -->
+                    <item id="33021">
+						<label>$INFO[Window.Property(xbmb3c_menuitem_name_0)]</label>
+						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_0)]&quot;, return)</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_0))</visible>
+					</item>
+					<item id="33022">
+						<label>$INFO[Window.Property(xbmb3c_menuitem_name_1)]</label>
+						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_1)]&quot;, return)</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_1))</visible>
+					</item>           
+					<item id="33023">
+						<label>$INFO[Window.Property(xbmb3c_menuitem_name_2)]</label>
+						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_2)]&quot;, return)</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_2))</visible>
+					</item>
+					<item id="33024">
+						<label>$INFO[Window.Property(xbmb3c_menuitem_name_3)]</label>
+						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_3)]&quot;, return)</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_3))</visible>
+					</item>
+                    <item id="33025">
+						<label>$INFO[Window.Property(xbmb3c_menuitem_name_4)]</label>
+						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_4)]&quot;, return)</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_4))</visible>
+					</item>
+
+                    
 
                     <!--
 					<item id="7">
