@@ -2,6 +2,7 @@
     <view id="List" value="50" />
     <view id="Big list" value="51" />
     <view id="Thumbnail" value="500" />
+    <view id="Small Thumb" value="522" />
     <view id="Poster Wrap" value="501" />
     <view id="Fanart" value="508" />
     <view id="Media info" value="504" />
