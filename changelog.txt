@@ -1,3 +1,8 @@
+[B]0.2.16[/B]
+
+- Dim the background a little
+- Add Small Thumb View
+
 [B]0.2.15[/B]
 
 - Use the new BG and section filtering for BG Fanart images on the home screen
