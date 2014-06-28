@@ -948,7 +948,7 @@
                 
 					<item id="5">
 						<label>Xbmb3c</label>
-                        <onclick>ActivateWindow(Video,plugin://plugin.video.xbmb3c)</onclick>
+                        <onclick>ActivateWindow(Video,plugin://plugin.video.xbmb3c,return)</onclick>
                         <!--<onclick>RunAddon(plugin.video.xbmb3c)</onclick>-->
 						<icon>-</icon>
 						<thumb>-</thumb>
