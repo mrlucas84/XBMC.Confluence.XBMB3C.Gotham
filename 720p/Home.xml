@@ -467,7 +467,9 @@
         </control>            
 
        
-		<include condition="!Skin.HasSetting(HomepageHideRecentlyAddedVideo) | !Skin.HasSetting(HomepageHideRecentlyAddedAlbums)">HomeRecentlyAddedInfo</include>
+		<include>HomeRecentlyAddedInfo</include>
+        
+        
 		<control type="button" id="9003">
 			<description>Hidden Button to pass through navigation when recently added is disabled</description>
 			<left>-20</left>
@@ -758,6 +760,7 @@
 		</control>
         
 		<control type="group">
+            <left>0</left>
 			<top>540</top>
 			<animation type="WindowOpen" reversible="false">
 				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300"/>
@@ -847,9 +850,9 @@
 			</control>
 			<control type="fixedlist" id="9000">
                 <colordiffuse>menu_alpha</colordiffuse>
-				<left>-110</left>
+				<left>0</left>
 				<top>5</top>
-				<width>1500</width>
+				<width>1280</width>
 				<height>60</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
@@ -857,8 +860,8 @@
 				<ondown>9001</ondown>
 				<pagecontrol>-</pagecontrol>
 				<scrolltime>300</scrolltime>
-				<focusposition>2</focusposition>
-				<movement>1</movement>
+				<focusposition>1</focusposition>
+				<!--<movement>1</movement>-->
 				<orientation>Horizontal</orientation>
 				<itemlayout height="60" width="300">
 					<control type="image">
@@ -953,7 +956,7 @@
 						<thumb>-</thumb>
 					</item>
                     
-					<item>
+					<item id="7">
 						<label>Search</label>
                         <onclick>RunPlugin(plugin://plugin.video.xbmb3c?mode=18)</onclick>
 						<icon>-</icon>
