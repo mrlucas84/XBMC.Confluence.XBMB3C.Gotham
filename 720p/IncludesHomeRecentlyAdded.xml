@@ -70,7 +70,7 @@
                 <width>105</width>
                 <height>5</height>
                 <texture background="true">Progress\progress_$INFO[ListItem.Property(complete_percentage)].png</texture>
-                <colordiffuse>60FFFFFF</colordiffuse>
+                <colordiffuse>AAFFFFFF</colordiffuse>
                 <aspectratio>stretch</aspectratio>
                 <visible>!IsEmpty(ListItem.Property(complete_percentage))</visible>
             </control>    
@@ -107,7 +107,7 @@
             <width>105</width>
             <height>5</height>
             <texture background="true">Progress\progress_$INFO[ListItem.Property(complete_percentage)].png</texture>
-            <colordiffuse>60FFFFFF</colordiffuse>
+            <colordiffuse>AAFFFFFF</colordiffuse>
             <aspectratio>stretch</aspectratio>
             <visible>!IsEmpty(ListItem.Property(complete_percentage))</visible>
         </control>      
