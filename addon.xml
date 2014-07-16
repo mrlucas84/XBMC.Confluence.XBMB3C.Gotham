@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.confluence_xbmb3c"
-  version="0.2.16"
+  version="0.2.17"
   name="Confluence XBMB3C"
   provider-name="null_pointer">
   <requires>
