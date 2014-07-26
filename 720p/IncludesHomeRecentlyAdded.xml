@@ -137,8 +137,7 @@
 			<animation effect="fade" time="200">WindowClose</animation>
             
             
-            
-
+           <!-- menu button No 1 -->
 			<control type="group">
 				<left>360</left>
 				<top>70</top>     
@@ -146,7 +145,7 @@
                 <animation effect="fade" start="0" end="100" time="0" condition="Container(9000).Hasfocus(33001)">Conditional</animation>                  
 				<visible>Container(9000).Hasfocus(33001) | IsEmpty(Container(8005).ListItem.Label)</visible>
 				<include>WidgetLabelActive</include>
-				<control type="list" id="8005">
+				<control type="fixedlist" id="8005">
                     <onleft>610</onleft>
                     <onright>-</onright>
                     <onup>20</onup>
@@ -187,7 +186,7 @@
 				<visible>Container(9000).Hasfocus(33001) | IsEmpty(Container(8006).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelRecent</include>
-				<control type="list" id="8006">
+				<control type="fixedlist" id="8006">
                     <onleft>610</onleft>
                     <onright>-</onright>
                     <onup>8005</onup>
@@ -221,13 +220,8 @@
 				</control>
 			</control>
             
-            
-            
-            
-            
-            
-            
-            
+
+            <!-- menu button No 2 -->
 			<control type="group">
 				<left>360</left>
 				<top>70</top>
@@ -236,7 +230,7 @@
 				<visible>Container(9000).Hasfocus(33002) | IsEmpty(Container(8007).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelActive</include>
-				<control type="list" id="8007">
+				<control type="fixedlist" id="8007">
                     <onleft>610</onleft>
                     <onright>-</onright>
                     <onup>20</onup>
@@ -277,7 +271,7 @@
 				<visible>Container(9000).Hasfocus(33002) | IsEmpty(Container(8008).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelRecent</include>
-				<control type="list" id="8008">
+				<control type="fixedlist" id="8008">
                     <onleft>610</onleft>
                     <onright>-</onright>
                     <onup>8007</onup>
@@ -312,11 +306,8 @@
 			</control>         
 
             
-            
-            
-            
-            
-            
+
+            <!-- menu button No 3 -->
             <control type="group">
 				<left>360</left>
 				<top>70</top>
@@ -325,7 +316,7 @@
 				<visible>Container(9000).Hasfocus(33003) | IsEmpty(Container(8009).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelActive</include>
-				<control type="list" id="8009">
+				<control type="fixedlist" id="8009">
                     <onleft>610</onleft>
                     <onright>-</onright>
                     <onup>20</onup>
@@ -366,7 +357,7 @@
 				<visible>Container(9000).Hasfocus(33003) | IsEmpty(Container(8010).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelRecent</include>
-				<control type="list" id="8010">
+				<control type="fixedlist" id="8010">
                     <onleft>610</onleft>
                     <onright>-</onright>
                     <onup>8009</onup>
@@ -402,16 +393,7 @@
             
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+            <!-- menu button No 4 -->
             <control type="group">
 				<left>360</left>
 				<top>70</top>
@@ -420,7 +402,7 @@
 				<visible>Container(9000).Hasfocus(33004) | IsEmpty(Container(8011).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelActive</include>
-				<control type="list" id="8011">
+				<control type="fixedlist" id="8011">
                     <onleft>610</onleft>
                     <onright>-</onright>
                     <onup>20</onup>
@@ -461,7 +443,7 @@
 				<visible>Container(9000).Hasfocus(33004) | IsEmpty(Container(8012).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelRecent</include>
-				<control type="list" id="8012">
+				<control type="fixedlist" id="8012">
                     <onleft>610</onleft>
                     <onright>-</onright>
                     <onup>8011</onup>
@@ -497,15 +479,7 @@
 
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
+            <!-- menu button No 5 -->
             <control type="group">
 				<left>360</left>
 				<top>70</top>
@@ -514,7 +488,7 @@
 				<visible>Container(9000).Hasfocus(33005) | IsEmpty(Container(8013).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelActive</include>
-				<control type="list" id="8013">
+				<control type="fixedlist" id="8013">
                     <onleft>610</onleft>
                     <onright>-</onright>
                     <onup>20</onup>
@@ -555,7 +529,7 @@
 				<visible>Container(9000).Hasfocus(33005) | IsEmpty(Container(8014).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelRecent</include>
-				<control type="list" id="8014">
+				<control type="fixedlist" id="8014">
                     <onleft>610</onleft>
                     <onright>-</onright>
                     <onup>8013</onup>
@@ -588,6 +562,442 @@
                     <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_4)]&type=recent</content>
 				</control>
 			</control>  
+            
+            
+            
+            <!-- menu button No 6 -->
+            <control type="group">
+				<left>360</left>
+				<top>70</top>
+                <animation effect="fade" start="100" end="0" time="0" condition="!Container(9000).Hasfocus(33006)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="0" condition="Container(9000).Hasfocus(33006)">Conditional</animation>                   
+				<visible>Container(9000).Hasfocus(33006) | IsEmpty(Container(8013).ListItem.Label)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelActive</include>
+				<control type="fixedlist" id="8015">
+                    <onleft>610</onleft>
+                    <onright>-</onright>
+                    <onup>20</onup>
+                    <ondown>8016</ondown>                     
+					<include>WidgetListPropsUpper</include>
+                    <include>WidgetUnselectedItems</include>
+                    <focusedlayout height="220" width="155">
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">folder-focus.png</bordertexture>
+                            <visible>Control.HasFocus(8015)</visible>
+                        </control>
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">button-nofocus.png</bordertexture>
+                            <visible>!Control.HasFocus(8015)</visible>
+                        </control>
+                        <include>WidgetProgressImage</include>                          
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>blue</textcolor>
+                            <visible>Control.HasFocus(8015)</visible>
+                        </control>
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>white</textcolor>
+                            <visible>!Control.HasFocus(8015)</visible>
+                        </control>
+                    </focusedlayout>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_4)]&type=active</content>
+				</control>
+			</control>
+			<control type="group">
+				<left>360</left>
+				<top>270</top>
+                <animation effect="fade" start="100" end="0" time="0" condition="!Container(9000).Hasfocus(33006)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="0" condition="Container(9000).Hasfocus(33006)">Conditional</animation>                   
+				<visible>Container(9000).Hasfocus(33006) | IsEmpty(Container(8016).ListItem.Label)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelRecent</include>
+				<control type="fixedlist" id="8016">
+                    <onleft>610</onleft>
+                    <onright>-</onright>
+                    <onup>8015</onup>
+                    <ondown>600</ondown>                    
+					<include>WidgetListPropsLower</include>
+                    <include>WidgetUnselectedItems</include>
+                    <focusedlayout height="220" width="155">
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">folder-focus.png</bordertexture>
+                            <visible>Control.HasFocus(8016)</visible>
+                        </control>
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">button-nofocus.png</bordertexture>
+                            <visible>!Control.HasFocus(8016)</visible>
+                        </control>
+                        <include>WidgetProgressImage</include>                          
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>blue</textcolor>
+                            <visible>Control.HasFocus(8016)</visible>
+                        </control>
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>white</textcolor>
+                            <visible>!Control.HasFocus(8016)</visible>
+                        </control>
+                    </focusedlayout>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_4)]&type=recent</content>
+				</control>
+			</control>            
+            
+            
+            
+            <!-- menu button No 7 -->
+            <control type="group">
+				<left>360</left>
+				<top>70</top>
+                <animation effect="fade" start="100" end="0" time="0" condition="!Container(9000).Hasfocus(33007)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="0" condition="Container(9000).Hasfocus(33007)">Conditional</animation>                   
+				<visible>Container(9000).Hasfocus(33007) | IsEmpty(Container(8017).ListItem.Label)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelActive</include>
+				<control type="fixedlist" id="8017">
+                    <onleft>610</onleft>
+                    <onright>-</onright>
+                    <onup>20</onup>
+                    <ondown>8018</ondown>                     
+					<include>WidgetListPropsUpper</include>
+                    <include>WidgetUnselectedItems</include>
+                    <focusedlayout height="220" width="155">
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">folder-focus.png</bordertexture>
+                            <visible>Control.HasFocus(8017)</visible>
+                        </control>
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">button-nofocus.png</bordertexture>
+                            <visible>!Control.HasFocus(8017)</visible>
+                        </control>
+                        <include>WidgetProgressImage</include>                          
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>blue</textcolor>
+                            <visible>Control.HasFocus(8017)</visible>
+                        </control>
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>white</textcolor>
+                            <visible>!Control.HasFocus(8017)</visible>
+                        </control>
+                    </focusedlayout>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_4)]&type=active</content>
+				</control>
+			</control>
+			<control type="group">
+				<left>360</left>
+				<top>270</top>
+                <animation effect="fade" start="100" end="0" time="0" condition="!Container(9000).Hasfocus(33007)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="0" condition="Container(9000).Hasfocus(33007)">Conditional</animation>                   
+				<visible>Container(9000).Hasfocus(33007) | IsEmpty(Container(8018).ListItem.Label)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelRecent</include>
+				<control type="fixedlist" id="8018">
+                    <onleft>610</onleft>
+                    <onright>-</onright>
+                    <onup>8017</onup>
+                    <ondown>600</ondown>                    
+					<include>WidgetListPropsLower</include>
+                    <include>WidgetUnselectedItems</include>
+                    <focusedlayout height="220" width="155">
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">folder-focus.png</bordertexture>
+                            <visible>Control.HasFocus(8018)</visible>
+                        </control>
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">button-nofocus.png</bordertexture>
+                            <visible>!Control.HasFocus(8018)</visible>
+                        </control>
+                        <include>WidgetProgressImage</include>                          
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>blue</textcolor>
+                            <visible>Control.HasFocus(8018)</visible>
+                        </control>
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>white</textcolor>
+                            <visible>!Control.HasFocus(8018)</visible>
+                        </control>
+                    </focusedlayout>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_4)]&type=recent</content>
+				</control>
+			</control>            
+            
+           
+
+            <!-- menu button No 8 -->
+            <control type="group">
+				<left>360</left>
+				<top>70</top>
+                <animation effect="fade" start="100" end="0" time="0" condition="!Container(9000).Hasfocus(33008)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="0" condition="Container(9000).Hasfocus(33008)">Conditional</animation>                   
+				<visible>Container(9000).Hasfocus(33008) | IsEmpty(Container(8019).ListItem.Label)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelActive</include>
+				<control type="fixedlist" id="8019">
+                    <onleft>610</onleft>
+                    <onright>-</onright>
+                    <onup>20</onup>
+                    <ondown>8020</ondown>                     
+					<include>WidgetListPropsUpper</include>
+                    <include>WidgetUnselectedItems</include>
+                    <focusedlayout height="220" width="155">
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">folder-focus.png</bordertexture>
+                            <visible>Control.HasFocus(8019)</visible>
+                        </control>
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">button-nofocus.png</bordertexture>
+                            <visible>!Control.HasFocus(8019)</visible>
+                        </control>
+                        <include>WidgetProgressImage</include>                          
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>blue</textcolor>
+                            <visible>Control.HasFocus(8019)</visible>
+                        </control>
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>white</textcolor>
+                            <visible>!Control.HasFocus(8019)</visible>
+                        </control>
+                    </focusedlayout>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_4)]&type=active</content>
+				</control>
+			</control>
+			<control type="group">
+				<left>360</left>
+				<top>270</top>
+                <animation effect="fade" start="100" end="0" time="0" condition="!Container(9000).Hasfocus(33008)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="0" condition="Container(9000).Hasfocus(33008)">Conditional</animation>                   
+				<visible>Container(9000).Hasfocus(33008) | IsEmpty(Container(8020).ListItem.Label)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelRecent</include>
+				<control type="fixedlist" id="8020">
+                    <onleft>610</onleft>
+                    <onright>-</onright>
+                    <onup>8019</onup>
+                    <ondown>600</ondown>                    
+					<include>WidgetListPropsLower</include>
+                    <include>WidgetUnselectedItems</include>
+                    <focusedlayout height="220" width="155">
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">folder-focus.png</bordertexture>
+                            <visible>Control.HasFocus(8020)</visible>
+                        </control>
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">button-nofocus.png</bordertexture>
+                            <visible>!Control.HasFocus(8020)</visible>
+                        </control>
+                        <include>WidgetProgressImage</include>                          
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>blue</textcolor>
+                            <visible>Control.HasFocus(8020)</visible>
+                        </control>
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>white</textcolor>
+                            <visible>!Control.HasFocus(8020)</visible>
+                        </control>
+                    </focusedlayout>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_4)]&type=recent</content>
+				</control>
+			</control>
+            
+            
+            
+            <!-- menu button No 9 -->
+            <control type="group">
+				<left>360</left>
+				<top>70</top>
+                <animation effect="fade" start="100" end="0" time="0" condition="!Container(9000).Hasfocus(33009)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="0" condition="Container(9000).Hasfocus(33009)">Conditional</animation>                   
+				<visible>Container(9000).Hasfocus(33009) | IsEmpty(Container(8021).ListItem.Label)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelActive</include>
+				<control type="fixedlist" id="8021">
+                    <onleft>610</onleft>
+                    <onright>-</onright>
+                    <onup>20</onup>
+                    <ondown>8022</ondown>                     
+					<include>WidgetListPropsUpper</include>
+                    <include>WidgetUnselectedItems</include>
+                    <focusedlayout height="220" width="155">
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">folder-focus.png</bordertexture>
+                            <visible>Control.HasFocus(8021)</visible>
+                        </control>
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">button-nofocus.png</bordertexture>
+                            <visible>!Control.HasFocus(8021)</visible>
+                        </control>
+                        <include>WidgetProgressImage</include>                          
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>blue</textcolor>
+                            <visible>Control.HasFocus(8021)</visible>
+                        </control>
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>white</textcolor>
+                            <visible>!Control.HasFocus(8021)</visible>
+                        </control>
+                    </focusedlayout>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_4)]&type=active</content>
+				</control>
+			</control>
+			<control type="group">
+				<left>360</left>
+				<top>270</top>
+                <animation effect="fade" start="100" end="0" time="0" condition="!Container(9000).Hasfocus(33009)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="0" condition="Container(9000).Hasfocus(33009)">Conditional</animation>                   
+				<visible>Container(9000).Hasfocus(33009) | IsEmpty(Container(8022).ListItem.Label)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelRecent</include>
+				<control type="fixedlist" id="8022">
+                    <onleft>610</onleft>
+                    <onright>-</onright>
+                    <onup>8021</onup>
+                    <ondown>600</ondown>                    
+					<include>WidgetListPropsLower</include>
+                    <include>WidgetUnselectedItems</include>
+                    <focusedlayout height="220" width="155">
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">folder-focus.png</bordertexture>
+                            <visible>Control.HasFocus(8022)</visible>
+                        </control>
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">button-nofocus.png</bordertexture>
+                            <visible>!Control.HasFocus(8022)</visible>
+                        </control>
+                        <include>WidgetProgressImage</include>                          
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>blue</textcolor>
+                            <visible>Control.HasFocus(8022)</visible>
+                        </control>
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>white</textcolor>
+                            <visible>!Control.HasFocus(8022)</visible>
+                        </control>
+                    </focusedlayout>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_4)]&type=recent</content>
+				</control>
+			</control>            
+            
+            
+            <!-- menu button No 10 -->
+            <control type="group">
+				<left>360</left>
+				<top>70</top>
+                <animation effect="fade" start="100" end="0" time="0" condition="!Container(9000).Hasfocus(33010)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="0" condition="Container(9000).Hasfocus(33010)">Conditional</animation>                   
+				<visible>Container(9000).Hasfocus(33010) | IsEmpty(Container(8023).ListItem.Label)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelActive</include>
+				<control type="fixedlist" id="8023">
+                    <onleft>610</onleft>
+                    <onright>-</onright>
+                    <onup>20</onup>
+                    <ondown>8024</ondown>                     
+					<include>WidgetListPropsUpper</include>
+                    <include>WidgetUnselectedItems</include>
+                    <focusedlayout height="220" width="155">
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">folder-focus.png</bordertexture>
+                            <visible>Control.HasFocus(8023)</visible>
+                        </control>
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">button-nofocus.png</bordertexture>
+                            <visible>!Control.HasFocus(8023)</visible>
+                        </control>
+                        <include>WidgetProgressImage</include>                          
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>blue</textcolor>
+                            <visible>Control.HasFocus(8023)</visible>
+                        </control>
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>white</textcolor>
+                            <visible>!Control.HasFocus(8023)</visible>
+                        </control>
+                    </focusedlayout>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_4)]&type=active</content>
+				</control>
+			</control>
+			<control type="group">
+				<left>360</left>
+				<top>270</top>
+                <animation effect="fade" start="100" end="0" time="0" condition="!Container(9000).Hasfocus(33010)">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="0" condition="Container(9000).Hasfocus(33010)">Conditional</animation>                   
+				<visible>Container(9000).Hasfocus(33010) | IsEmpty(Container(8024).ListItem.Label)</visible>
+				<include>VisibleFadeEffect</include>
+				<include>WidgetLabelRecent</include>
+				<control type="fixedlist" id="8024">
+                    <onleft>610</onleft>
+                    <onright>-</onright>
+                    <onup>8023</onup>
+                    <ondown>600</ondown>                    
+					<include>WidgetListPropsLower</include>
+                    <include>WidgetUnselectedItems</include>
+                    <focusedlayout height="220" width="155">
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">folder-focus.png</bordertexture>
+                            <visible>Control.HasFocus(8024)</visible>
+                        </control>
+                        <control type="image">
+                            <include>WidgetSelectedImage</include>
+                            <bordertexture border="5">button-nofocus.png</bordertexture>
+                            <visible>!Control.HasFocus(8024)</visible>
+                        </control>
+                        <include>WidgetProgressImage</include>                          
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>blue</textcolor>
+                            <visible>Control.HasFocus(8024)</visible>
+                        </control>
+                        <control type="label">
+                            <include>WidgetSelectedLabel</include>
+                            <textcolor>white</textcolor>
+                            <visible>!Control.HasFocus(8024)</visible>
+                        </control>
+                    </focusedlayout>
+                    <content target="video">$INFO[Window.Property(xbmb3c_collection_menuitem_content_4)]&type=recent</content>
+				</control>
+			</control>
+            
+                        
+            
+            
+            
+            
+            
             
             
             

@@ -969,6 +969,31 @@
 						<icon>-</icon>
 						<thumb>-</thumb>
 						<visible>System.GetBool(pvrmanager.enabled)</visible>
+					</item>    
+
+					<item id="2">
+						<label>Videos</label>
+						<onclick condition="StringCompare(Window.Property(VideosDirectLink),True)">ActivateWindow(Videos)</onclick>
+						<onclick condition="!StringCompare(Window.Property(VideosDirectLink),True)">ActivateWindow(Videos,root)</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>Skin.HasSetting(HomeMenuShowVideosButton)</visible>
+					</item>      
+
+					<item id="4">
+						<label>Pictures</label>
+						<onclick>ActivateWindow(Pictures)</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>Skin.HasSetting(HomeMenuShowPicturesButton)</visible>
+					</item>                
+
+					<item id="3">
+						<label>Music</label>
+						<onclick>ActivateWindow(Music)</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>Skin.HasSetting(HomeMenuShowMusicButton)</visible>
 					</item>                    
 
                     <!-- added dynamic favourites menu item -->
@@ -1012,44 +1037,106 @@
 						<thumb>-</thumb>
 						<visible>!IsEmpty(Window.Property(xbmb3c_collection_menuitem_name_4))</visible>
 					</item>     
+                    <item id="33006">
+						<label>$INFO[Window.Property(xbmb3c_collection_menuitem_name_5)]</label>
+                        <label2>$INFO[Window.Property(xbmb3c_collection_menuitem_collection_5)]</label2>
+						<onclick>$INFO[Window.Property(xbmb3c_collection_menuitem_action_5)]</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Window.Property(xbmb3c_collection_menuitem_name_5))</visible>
+					</item>     
+                    <item id="33007">
+						<label>$INFO[Window.Property(xbmb3c_collection_menuitem_name_6)]</label>
+                        <label2>$INFO[Window.Property(xbmb3c_collection_menuitem_collection_6)]</label2>
+						<onclick>$INFO[Window.Property(xbmb3c_collection_menuitem_action_6)]</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Window.Property(xbmb3c_collection_menuitem_name_6))</visible>
+					</item>     
+                    <item id="33008">
+						<label>$INFO[Window.Property(xbmb3c_collection_menuitem_name_7)]</label>
+                        <label2>$INFO[Window.Property(xbmb3c_collection_menuitem_collection_7)]</label2>
+						<onclick>$INFO[Window.Property(xbmb3c_collection_menuitem_action_7)]</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Window.Property(xbmb3c_collection_menuitem_name_7))</visible>
+					</item>     
+                    <item id="33009">
+						<label>$INFO[Window.Property(xbmb3c_collection_menuitem_name_8)]</label>
+                        <label2>$INFO[Window.Property(xbmb3c_collection_menuitem_collection_8)]</label2>
+						<onclick>$INFO[Window.Property(xbmb3c_collection_menuitem_action_8)]</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Window.Property(xbmb3c_collection_menuitem_name_8))</visible>
+					</item>     
+                    <item id="33010">
+						<label>$INFO[Window.Property(xbmb3c_collection_menuitem_name_9)]</label>
+                        <label2>$INFO[Window.Property(xbmb3c_collection_menuitem_collection_9)]</label2>
+						<onclick>$INFO[Window.Property(xbmb3c_collection_menuitem_action_9)]</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Window.Property(xbmb3c_collection_menuitem_name_9))</visible>
+					</item>     
+                    <item id="33011">
+						<label>$INFO[Window.Property(xbmb3c_collection_menuitem_name_10)]</label>
+                        <label2>$INFO[Window.Property(xbmb3c_collection_menuitem_collection_10)]</label2>
+						<onclick>$INFO[Window.Property(xbmb3c_collection_menuitem_action_10)]</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Window.Property(xbmb3c_collection_menuitem_name_10))</visible>
+					</item>                         
 
 
                     <!-- add menu items for favourites -->
                     <item id="33021">
 						<label>$INFO[Window.Property(xbmb3c_menuitem_name_0)]</label>
-						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_0)]&quot;, return)</onclick>
+                        <onclick>$INFO[Window.Property(xbmb3c_menuitem_action_0)]</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
 						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_0))</visible>
 					</item>
 					<item id="33022">
 						<label>$INFO[Window.Property(xbmb3c_menuitem_name_1)]</label>
-						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_1)]&quot;, return)</onclick>
+						<onclick>$INFO[Window.Property(xbmb3c_menuitem_action_1)]</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
 						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_1))</visible>
 					</item>           
 					<item id="33023">
 						<label>$INFO[Window.Property(xbmb3c_menuitem_name_2)]</label>
-						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_2)]&quot;, return)</onclick>
+						<onclick>$INFO[Window.Property(xbmb3c_menuitem_action_2)]</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
 						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_2))</visible>
 					</item>
 					<item id="33024">
 						<label>$INFO[Window.Property(xbmb3c_menuitem_name_3)]</label>
-						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_3)]&quot;, return)</onclick>
+						<onclick>$INFO[Window.Property(xbmb3c_menuitem_action_3)]</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
 						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_3))</visible>
 					</item>
                     <item id="33025">
 						<label>$INFO[Window.Property(xbmb3c_menuitem_name_4)]</label>
-						<onclick>ActivateWindow(video,&quot;$INFO[Window.Property(xbmb3c_menuitem_action_4)]&quot;, return)</onclick>
+						<onclick>$INFO[Window.Property(xbmb3c_menuitem_action_4)]</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
 						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_4))</visible>
 					</item>
+                    <item id="33026">
+						<label>$INFO[Window.Property(xbmb3c_menuitem_name_5)]</label>
+						<onclick>$INFO[Window.Property(xbmb3c_menuitem_action_5)]</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_5))</visible>
+					</item>      
+                    <item id="33027">
+						<label>$INFO[Window.Property(xbmb3c_menuitem_name_6)]</label>
+						<onclick>$INFO[Window.Property(xbmb3c_menuitem_action_6)]</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Window.Property(xbmb3c_menuitem_name_6))</visible>
+					</item>  
 
                     
 
