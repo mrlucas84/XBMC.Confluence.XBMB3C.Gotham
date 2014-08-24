@@ -126,6 +126,16 @@
         <label>$INFO[ListItem.Label]</label>    
     </include>
     
+    <include name="ItemIndexStyle">
+        <left>-35</left>
+        <top>150</top>
+        <height>20</height>
+        <width>30</width>
+        <font>font12</font>
+        <textcolor>white</textcolor>
+        <shadowcolor>black</shadowcolor>    
+        <align>right</align>
+    </include>
     
 	<include name="HomeRecentlyAddedInfo">
 		<control type="group" id="9003">
@@ -137,6 +147,7 @@
 			<animation effect="fade" time="200">WindowClose</animation>
             
             
+            
            <!-- menu button No 1 -->
 			<control type="group">
 				<left>360</left>
@@ -145,6 +156,10 @@
                 <animation effect="fade" start="0" end="100" time="0" condition="Container(9000).Hasfocus(33001)">Conditional</animation>                  
 				<visible>Container(9000).Hasfocus(33001) | IsEmpty(Container(8005).ListItem.Label)</visible>
 				<include>WidgetLabelActive</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8005).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8005">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -186,6 +201,10 @@
 				<visible>Container(9000).Hasfocus(33001) | IsEmpty(Container(8006).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelRecent</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8006).ListItem.Property(item_index)]</label>
+                </control>                   
 				<control type="fixedlist" id="8006">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -230,6 +249,10 @@
 				<visible>Container(9000).Hasfocus(33002) | IsEmpty(Container(8007).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelActive</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8007).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8007">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -271,6 +294,10 @@
 				<visible>Container(9000).Hasfocus(33002) | IsEmpty(Container(8008).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelRecent</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8008).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8008">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -316,6 +343,10 @@
 				<visible>Container(9000).Hasfocus(33003) | IsEmpty(Container(8009).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelActive</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8009).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8009">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -357,6 +388,10 @@
 				<visible>Container(9000).Hasfocus(33003) | IsEmpty(Container(8010).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelRecent</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8010).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8010">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -402,6 +437,10 @@
 				<visible>Container(9000).Hasfocus(33004) | IsEmpty(Container(8011).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelActive</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8011).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8011">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -443,6 +482,10 @@
 				<visible>Container(9000).Hasfocus(33004) | IsEmpty(Container(8012).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelRecent</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8012).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8012">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -488,6 +531,10 @@
 				<visible>Container(9000).Hasfocus(33005) | IsEmpty(Container(8013).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelActive</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8013).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8013">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -529,6 +576,10 @@
 				<visible>Container(9000).Hasfocus(33005) | IsEmpty(Container(8014).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelRecent</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8014).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8014">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -574,6 +625,10 @@
 				<visible>Container(9000).Hasfocus(33006) | IsEmpty(Container(8013).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelActive</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8015).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8015">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -615,6 +670,10 @@
 				<visible>Container(9000).Hasfocus(33006) | IsEmpty(Container(8016).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelRecent</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8016).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8016">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -660,6 +719,10 @@
 				<visible>Container(9000).Hasfocus(33007) | IsEmpty(Container(8017).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelActive</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8017).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8017">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -701,6 +764,10 @@
 				<visible>Container(9000).Hasfocus(33007) | IsEmpty(Container(8018).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelRecent</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8018).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8018">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -746,6 +813,10 @@
 				<visible>Container(9000).Hasfocus(33008) | IsEmpty(Container(8019).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelActive</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8019).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8019">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -787,6 +858,10 @@
 				<visible>Container(9000).Hasfocus(33008) | IsEmpty(Container(8020).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelRecent</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8020).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8020">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -832,6 +907,10 @@
 				<visible>Container(9000).Hasfocus(33009) | IsEmpty(Container(8021).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelActive</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8021).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8021">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -873,6 +952,10 @@
 				<visible>Container(9000).Hasfocus(33009) | IsEmpty(Container(8022).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelRecent</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8022).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8022">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -917,6 +1000,10 @@
 				<visible>Container(9000).Hasfocus(33010) | IsEmpty(Container(8023).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelActive</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8023).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8023">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -958,6 +1045,10 @@
 				<visible>Container(9000).Hasfocus(33010) | IsEmpty(Container(8024).ListItem.Label)</visible>
 				<include>VisibleFadeEffect</include>
 				<include>WidgetLabelRecent</include>
+                <control type="label">
+                    <include>ItemIndexStyle</include>
+                    <label>$INFO[Container(8024).ListItem.Property(item_index)]</label>
+                </control>                  
 				<control type="fixedlist" id="8024">
                     <onleft>610</onleft>
                     <onright>-</onright>
@@ -994,12 +1085,7 @@
             
                         
             
-            
-            
-            
-            
-            
-            
+
             
         </control>
 	</include>
